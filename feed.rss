@@ -1,0 +1,20 @@
+---
+---
+<rss version="2.0">
+  <channel>
+    <title>Antumbra Station</title>
+    <link>antumbrastation.com</link>
+    <description>Orbiting the Sun-Earth L2 Lagrange Point</description>
+    <language>en-us</language>
+
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>{{ post.url }}</link>
+      <description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
+      <pubDate>{{ post.date | date_to_long_string }}</pubDate>
+    </item>
+    {% endfor %}
+
+  </channel>
+</rss>

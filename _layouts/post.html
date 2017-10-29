@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include header.html %}
+
+  <body>
+    {% include nav-bar.html %}
+    
+    <!-- Page Content -->
+    <div id="wrap">
+    <div class="container">
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-7">
+          <!-- Title -->
+          <h3 class="mt-4">{{ page.title }}</h3>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Posted on {{ page.date | date_to_long_string }} in {{ page.category }}</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="{{ page.banner }}" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          {{ content }}
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-4">
+          <h5 class="mt-5 text-center">Orbiting the Sun-Earth L<sub>2</sub> Lagrange Point</h5>
+          <p class="text-center">Just a project site for some of my hobby coding projects</p>
+        
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Projects on This Site</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="/bedsui-project.html">T31LoSB</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-4">
+            <h5 class="card-header">Project Posts</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="list-unstyled mb-0">
+                    {% for post in site.categories[page.category] %}
+                    <li> 
+                      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+    </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+  </body>
+
+</html>

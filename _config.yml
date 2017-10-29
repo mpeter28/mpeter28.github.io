@@ -1,0 +1,7 @@
+# Site settings
+timezone: America/New_York
+encoding: utf-8
+title: "Antumbra Station"
+
+# Build settings
+markdown: kramdown

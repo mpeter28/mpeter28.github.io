@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include header.html %}
+
+  <body>
+    {% include nav-bar.html %}
+    
+    <!-- Page Content -->
+    <div id="wrap">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="mt-5">{{ page.title }}</h3>
+          <p class="lead">{{ page.description }}</p>
+        </div>
+      </div>
+
+      <!-- Heading Row -->
+      <div class="row">
+        <div class="col-md-3">
+        </div>
+
+        <div class="col-md-6 text-center">
+          <img class="img-fluid rounded" src="{{ page.billboard }}" alt="">
+        </div>
+
+        <div class="col-md-3">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="mt-4">About</h3>
+          <hr>
+          {{ content }}
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="mt-4">Recent Releases</h3>
+          <hr>
+
+          <ul class="list-unstyled mb-0">
+          {% for release in page.releases %}
+            <li> 
+              <a href="/release/{{ release }}">{{ release }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="mt-4">Recent Development Updates</h3>
+          <hr>
+
+          {% for post in site.posts %}
+          <!-- Title -->
+          <p><h5 class="mt-4"><a href="{{ post.url }}">{{ post.title }}</a></h5>  Posted on {{ post.date | date_to_long_string }}</p>
+
+          <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+          <hr>
+          {% endfor %}
+        </div>
+      </div>
+
+      <br><br>
+
+    </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+  </body>
+
+</html>

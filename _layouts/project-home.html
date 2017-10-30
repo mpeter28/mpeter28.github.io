@@ -66,9 +66,11 @@
 
           {% for post in site.posts %}
           <!-- Title -->
-          <p><h5 class="mt-4"><a href="{{ post.url }}">{{ post.title }}</a></h5>  Posted on {{ post.date | date_to_long_string }}</p>
+          <p><h5 class="mt-4">{{ post.title }}</h5>  Posted on {{ post.date | date_to_long_string }}</p>
 
           <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+
+	      <p><a href="{{ post.url }}">Read More</a></p>
           <hr>
           {% endfor %}
         </div>

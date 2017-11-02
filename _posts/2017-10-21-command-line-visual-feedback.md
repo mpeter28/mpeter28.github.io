@@ -3,6 +3,7 @@ layout: post
 title: Improving the Command Line - Better Visual Feedback
 category: T31LoSB
 tags: [command-line, ui]
+release: bedsui-Alpha-20171021.zip
 banner: /img/t31losb/the-thirty-one-lieutenants-of-sorcerer-bedsui.png
 ---
 

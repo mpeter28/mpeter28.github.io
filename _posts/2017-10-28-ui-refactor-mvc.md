@@ -3,6 +3,7 @@ layout: post
 title: Refactoring the UI Into an MVC Architecture
 category: T31LoSB
 tags: [refactor, ui]
+release: bedsui-Stable-20171028.zip
 banner: /img/t31losb/the-thirty-one-lieutenants-of-sorcerer-bedsui.png
 ---
 

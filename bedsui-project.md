@@ -3,8 +3,9 @@ layout: project-home
 title: "The Thirty One Lieutenants of Sorcerer Bedsui"
 description: "Squad Tactics Roguelike"
 category: T31LoSB
-billboard: /img/t31losb/movementthreat.png
-releases: [ bedsui-Alpha-20171028.zip, bedsui-Alpha-20171021.zip, bedsui-Alpha-20171014.zip ] 
+billboard: /img/t31losb/the-thirty-one-lieutenants-of-sorcerer-bedsui.png
+releases: [ bedsui-Stable-20171028.zip, bedsui-Alpha-20171021.zip, bedsui-Alpha-20171014.zip ]
+schedule: "Development snapshots are released whenever a significant feature is completed"
 ---
 
 *Chaos blankets the world. From his tower in the southern marches, the illusionist Bedsui manipulates the minds of many great Kings and Emperors, sowing war and discord. But soon the madness ends! Steeling their resolve, a band of adventurers prepares to storm the tower and defeat the sorcerer. However, between them and their goal await Bedsui's many servants...*

@@ -21,13 +21,19 @@
 
           <!-- Date/Time -->
           <p>Posted on {{ page.date | date_to_long_string }} in {{ page.category }}</p>
-
           <hr>
 
           <!-- Preview Image -->
           <img class="img-fluid rounded" src="{{ page.banner }}" alt="">
-
           <hr>
+
+          {% if (page.release != null) %}
+          <div class="alert alert-dark" role="alert">
+            Download the <a href="/release/{{ page.release }}" class="alert-link">snapshot release</a> associated with this post
+          </div>
+          {% endif %}
+
+          <br><br>
 
           <!-- Post Content -->
           {{ content }}

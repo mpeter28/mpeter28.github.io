@@ -3,6 +3,7 @@ layout: post
 title: Project Launch - The Thirty One Lieutenants of Sorcerer Bedsui
 category: T31LoSB
 tags: [overview, vision]
+release: bedsui-Alpha-20171014.zip
 banner: /img/t31losb/the-thirty-one-lieutenants-of-sorcerer-bedsui.png
 ---
 

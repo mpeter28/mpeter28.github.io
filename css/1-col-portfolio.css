@@ -18,9 +18,9 @@ body {
   padding: 0 0 60px;
 }
 
-@media (min-width: 992px) {
+@media {
   body {
-    padding-top: 56px;
+    padding-top: 112px;
   }
 }
 

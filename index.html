@@ -28,7 +28,7 @@ title: Home
       <div class="row">
         <div class="col-md-6">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="/img/t31losb/20171014/combat.png" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/img/t31losb/the-thirty-one-lieutenants-of-sorcerer-bedsui.png" alt="">
           </a>
         </div>
         <div class="col-md-1">
@@ -47,14 +47,33 @@ title: Home
       </div>
       <!-- /.row -->
 
-      <br>
+      <br><br>
+
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/img/schroedingerchess/project-image.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+          <h4><a href="haft-schroedinger-chess.html">Haft Schroedinger Chess</a></h4>
+          <p>*Haft Schroedinger Chess* is a chess variant with rules inspired by quantum mechanics. Like traditional chess, it is a combinatorial game, meaning it is both deterministic (no random chance at all) and has no hidden information.</p>
+        </div>
+        <hr>
+      </div>
+      <!-- /.row -->
+
+      <br><br>
 
       <div class="row">
         <div class="col-md-12">
           <h3 class="mt-4">Recent Development Updates [<a href="/feed.rss">RSS</a>]</h3>
           <hr>
 
-          {% for post in site.posts %}
+          {% for post in site.posts limit:5 %}
           <!-- Title -->
           <p><h5 class="mt-4">{{ post.title }}</h5>  Posted on {{ post.date | date_to_long_string }}</p>
 

@@ -21,7 +21,7 @@ The crucial piece of info the predictive text matcher needs to guess the command
     <row column> move range
     <row column> threat range
 
-With the commands structured to have <row column> first, the predictive text matcher can uniquely identify the command as soon as the 'm' in "move range" or 't' in "threat range" is typed. Much less annoying. At some point in the future I'm planning to go over every command and make sure the crucial info is front loaded to optimize typing speed. For now I just fixed the more obviously annoying commands, such as the example two.
+With the commands structured to have row and column first, the predictive text matcher can uniquely identify the command as soon as the 'm' in "move range" or 't' in "threat range" is typed. Much less annoying. At some point in the future I'm planning to go over every command and make sure the crucial info is front loaded to optimize typing speed. For now I just fixed the more obviously annoying commands, such as the example two.
 
 The next issue was how many turns are needed to win a battle. There's too much time spent on initial piece deployment; openings last longer than in chess, despite each side having half as many pieces. Chess is played on a tiny board, 8 by 8, compared to battlefields in T31LoSB, 15 by 30. The bigger playing field slows down everything with the extra moves wasted just covering the distance, so I tried cutting down the board to 9 by 18. 
 

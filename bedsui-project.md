@@ -4,7 +4,7 @@ title: "The Thirty One Lieutenants of Sorcerer Bedsui"
 description: "Squad Tactics Roguelike"
 category: T31LoSB
 billboard: /img/t31losb/the-thirty-one-lieutenants-of-sorcerer-bedsui.png
-releases: [ bedsui-Stable-20171127.zip, bedsui-Stable-20171124.zip, bedsui-Stable-20171117.zip, bedsui-Stable-20171111.zip, bedsui-Stable-20171028.zip, bedsui-Alpha-20171021.zip, bedsui-Alpha-20171014.zip ]
+releases: [ bedsui-Stable-20171205.zip, bedsui-Stable-20171127.zip, bedsui-Stable-20171124.zip, bedsui-Stable-20171117.zip, bedsui-Stable-20171111.zip, bedsui-Stable-20171028.zip, bedsui-Alpha-20171021.zip, bedsui-Alpha-20171014.zip ]
 schedule: "Development snapshots are released whenever a significant feature is completed; playable on Windows, Linux and Macs."
 ---
 
